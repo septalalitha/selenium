@@ -6,13 +6,13 @@ import org.openqa.selenium.support.ui.Select;
 public class dropdown {
 
 	public static void main(String[] args) {		
-		System.setProperty("webdriver.chrome.driver","chromedriver”)		
+		System.setProperty("webdriver.chrome.driver","chromedriver”);		
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://book2.spicejet.com/");
-		Select s=new Select(driver.findElement(By.id("ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListPassengerType_ADT")));
-		s.selectByValue("2");
-		s.selectByIndex(5);
-	    s.selectByVisibleText("3");
+		Select select =new Select(driver.findElement(By.id("ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListPassengerType_ADT")));
+		select.selectByValue("2");
+		select.selectByIndex(5);
+	    select.selectByVisibleText("3");
 	    driver.findElement(By.xpath("//input[@id='ControlGroupSearchView_AvailabilitySearchInputSearchVieworiginStation1_CTXT']")).click();;
 	    driver.findElement(By.xpath("//a[@value='IXA']")).click();
 	    
