@@ -5,11 +5,8 @@ import org.openqa.selenium.support.ui.Select;
 
 public class dropdown {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		System.setProperty("webdriver.chrome.driver","chromedriver");
-		
+	public static void main(String[] args) {		
+		System.setProperty("webdriver.chrome.driver","chromedriver”)		
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://book2.spicejet.com/");
 		Select s=new Select(driver.findElement(By.id("ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListPassengerType_ADT")));
@@ -43,7 +40,6 @@ driver.findElement(By.xpath("//a[@value='GOI']")).click();
 
 // If you want to accees any methods in class ,create object for that class and access methods
 
-//using object.method
 
 /*Select dropdown=new Select(driver.findElement(By.xpath(".//*[@id='ctl00_mainContent_ddl_Adult']")));
 
