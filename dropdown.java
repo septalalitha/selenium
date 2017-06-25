@@ -12,7 +12,7 @@ public class dropdown {
 		Select select =new Select(driver.findElement(By.id("ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListPassengerType_ADT")));
 		select.selectByValue("2");
 		select.selectByIndex(5);
-	    select.selectByVisibleText("3");
+	    select.selectByVisibleText(“4”);
 	    driver.findElement(By.xpath("//input[@id='ControlGroupSearchView_AvailabilitySearchInputSearchVieworiginStation1_CTXT']")).click();;
 	    driver.findElement(By.xpath("//a[@value='IXA']")).click();
 	    
