@@ -7,7 +7,7 @@ public class radiobutton {
 	public static void main(String[] args) {
 		System.setProperty("webdriver.gecko.driver ","geckodriver");
 		WebDriver driver=new FirefoxDriver();
-				
+		driver.get("https://book2.spicejet.com/"); 		
 		driver.get("http://www.echoecho.com/htmlforms10.htm");
 		int count= driver.findElements(By.xpath("//input[@name='group1']")).size();
 		
